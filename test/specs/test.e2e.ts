@@ -7,9 +7,9 @@ describe('My Login application', () => {
         await LoginPage.open()
 
         await LoginPage.login('Admin', 'admin123')
-        // await expect(SecurePage.flashAlert).toBeExisting()
-        // await expect(SecurePage.flashAlert).toHaveText(
-        //     expect.stringContaining('You logged into a secure area!'))
+        
+         await expect(SecurePage.Dashboard).toBeExisting()
+      
         await browser.pause(5000)
     })
 })
