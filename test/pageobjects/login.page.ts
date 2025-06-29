@@ -19,7 +19,19 @@ class LoginPage extends Page {
     public get btnSubmit () {
         return $('button[type="submit"]');
     }
+    public get errorMessage() {
+    return $('//i[@class="oxd-icon bi-exclamation-circle oxd-alert-content-icon"]');
+}
+public get userDropDown(){
+    return $('//li[@class="oxd-userdropdown"]')
+}
+public get logoutButton (){
+    return $('//a[normalize-space()="Logout"]')
+}
 
+public get loginLabel(){
+    return $('h5=Login')
+}
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
@@ -28,6 +40,11 @@ class LoginPage extends Page {
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
+    }
+
+    public async logout(){
+        await this.userDropDown.click();
+        await this.logoutButton.click();
     }
 
     /**
