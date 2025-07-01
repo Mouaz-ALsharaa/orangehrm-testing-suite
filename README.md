@@ -19,7 +19,14 @@ Automated testing project for the [OrangeHRM Open Source](https://opensource-dem
 -  Git & GitHub
 
 ---
+ API Testing (Postman)
 
+-  Login (POST)
+-  Get Employees (GET)
+- Create Employee (POST)
+ - Delete Employee (DELETE)
+ Postman Collection available in [`/api`](./api)
+-----
  How to Run the Tests
 
 1. Install dependencies:
