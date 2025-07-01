@@ -27,6 +27,15 @@ Automated testing project for the [OrangeHRM Open Source](https://opensource-dem
  - Delete Employee (DELETE)
  Postman Collection available in [`/api`](./api)
 -----
+Performance Report (JMeter)
+
+Simulated 10 users logging into the login API endpoint using JMeter.
+
+ Below is a sample from the HTML report generated:
+
+![Performance Report](./screenshots/performance_report.png)
+
+-------
  How to Run the Tests
 
 1. Install dependencies:
